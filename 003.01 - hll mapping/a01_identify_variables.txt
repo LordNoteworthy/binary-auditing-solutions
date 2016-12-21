@@ -1,5 +1,0 @@
-- Variables was identified automatically by IDA.
-
-- Notice how IDA Pro tells us that this is an EBP-based stack frame used in the main function, which means the local variables and parameters will be referenced via the EBP register throughout the function.
-
-- IDA Pro has successfully discovered all local variables and parameters in this function. It has labeled the local variables with the prefix var_.
