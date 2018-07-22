@@ -1,8 +1,8 @@
-* The DIV instruction (and it's counterpart IDIV for signed numbers) gives both the quotient and remainder (modulo). The result of the division is stored in EAX (quotient) and the remainder in EDX (modulo).
-* A modulo operation in assembly could also be achieved using an AND instruction. If you compute modulo a power of two, using bitwise AND is simpler and generally faster than performing division. If b is a power of two, a % b == a & (b - 1). For example, let's take a value in register EAX, modulo 64.
-The simplest way would be AND EAX, 63, because 63 is 111111 in binary.
-* In the exercise, I was not able to find any instructions which gives the modulo, I am wondering if the author takes into consideration the code which calls the Main function, if you have any suggestion, please let me know.
-* Main function is:
+* There is two ways we can compute the `modulo` operation in assembly:
+    1. The DIV instruction (and it's counterpart IDIV for signed numbers) gives both the quotient and remainder (modulo). The result of the division is stored in EAX (quotient) and the remainder in EDX (modulo).
+    2. This works only if __b__ is a power of __two__, then `a % b == a & (b - 1)`.
+* In the exercise, I was not able to find any instructions which gives the modulo, I am wondering if the author takes into consideration the code which calls the `Main()` function, if you have any suggestion, please let me know.
+* Main function disassembly:
 ```
 .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)
 .text:00401000 _main           proc near               ; CODE XREF: ___tmainCRTStartup+10Ap
@@ -22,7 +22,3 @@ The simplest way would be AND EAX, 63, because 63 is 111111 in binary.
 .text:00401010                 retn
 .text:00401010 _main           endp
 ```
-
-
-
-

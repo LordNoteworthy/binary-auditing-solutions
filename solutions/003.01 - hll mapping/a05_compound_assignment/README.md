@@ -1,6 +1,6 @@
-* Compound assignment is the name given to certain assignment operators in certain programming languages (especially those derived from C).
-* An Compound assignment is generally used to replace a statement where an operator takes a variable as one of its arguments and then assigns the result back to the same variable.
-* A simple example is ```x += 1``` which is expanded to ```x = x + 1```. Similar constructions are often available for various binary operators.
+* __Compound assignment__ is the name given to certain assignment operators in certain programming languages (especially those derived from C).
+* An compound assignment is generally used to replace a statement where an operator takes a variable as one of its arguments and then assigns the result back to the same variable.
+* A simple example is `x += 1` which is expanded to `x = x + 1`. Similar constructions are often available for various binary operators.
 * Remember that memory to memory operation is not permitted in assembly, it should be always first copied to a register, do the math and copy back from the register to memory.
 
 
