@@ -1,7 +1,6 @@
 * A while loop in C repeatedly executes a target statement as long as a given condition is true:
 ```
-Syntax
-The syntax of a while loop in C programming language is −
+The syntax of a while loop in C programming language is:
 
 while(condition) {
    statement(s);
@@ -9,7 +8,7 @@ while(condition) {
 ```
 * In our scenario, our condition is located at _0x0040100B_, it exits the loop once local __var_4__ is less or equal to 0.
 * __var_4__ was initialized to 9 at _0x00401004_.
-* The code inside the loop is responsible for printing: ```9, 8, 7, 6, 5, 4, 3, 2, 1``` then after exiting the loop ```FIRE!```.
+* The code inside the loop is responsible for printing: ```9, 8, 7, 6, 5, 4, 3, 2, 1``` then after exiting the loop ```FIRE!\n```.
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -46,9 +45,11 @@ while(condition) {
 .text:00401053 _main           endp
 ```
 * The C pseaudo-code will look like this:
+```
 int var_4 = 9;
 while (var_4 < 0>) {
     printf ("%d, ", var_4);
     var_4--;
 }
 printf ("FIRE!\n");
+```

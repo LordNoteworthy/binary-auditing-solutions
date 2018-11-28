@@ -1,7 +1,6 @@
 * A for loop in C repeatedly executes a target statement as long as a given condition is true:
 ```
-Syntax
-The syntax of a for loop in C programming language is −
+The syntax of a for loop in C programming language is:
 
 for ( init; condition; increment/decrement ) {
    statement(s);
@@ -52,7 +51,7 @@ for ( init; condition; increment/decrement ) {
 ```
 * The C pseaudo-code will look like this:
 ```
-for (var_4 = 10; var_4 > 0; --var_4 {
+for (var_4 = 10; var_4 > 0; --var_4) {
     printf ("%d, ", var_4);
 }
 printf ("FIRE!\n");
