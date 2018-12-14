@@ -10,6 +10,7 @@ for ( init; condition; increment/decrement ) {
 * Our __condition__ is located at _0x00401016_, it exits the loop once local __var_4__ is less or equal to 0.
 * Our __decrement__ is located at _0x00401010_, our our local __var_4__ is decremented by 1.
 * The code inside the loop is responsible for printing: ```10, 9, 8, 7, 6, 5, 4, 3, 2, 1``` then after exiting the loop ```FIRE!\n```.
+* Notice how this is different than the while loop seen before.
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
