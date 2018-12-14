@@ -1,6 +1,6 @@
 * The break statement in C programming has the following two usages:
-- When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.
-- It can be used to terminate a case in the switch statement.
+    - When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.
+    - It can be used to terminate a case in the switch statement.
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
