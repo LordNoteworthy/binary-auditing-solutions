@@ -43,12 +43,12 @@ sub_408100 endp
 
 * Looks like a hash routine.
 ```
-// 3 parameters are passed to this function.
-void Ex6 (char* arg1, int* arg2, int arg3) {
+
+void Ex7 (char* arg1, int* arg2, int arg3) {
 
     *arg2 = 0;
 
-    while (arg3 < 0) {
+    while (arg3 > 0) {
         *arg2 = (arg2 << 4) + *arg1;
 
         int tmp = *arg2 & 0xF0000000;
