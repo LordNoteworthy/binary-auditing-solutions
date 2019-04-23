@@ -1,5 +1,6 @@
-* Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has a higher precedence than the addition operator.
-* Our exercice:
+- Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has a higher precedence than the addition operator.
+- Our exercice:
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -13,4 +14,5 @@
 .text:0040101E                 retn
 .text:0040101E _main           endp
 ```
-* Well, that is not obvious here to guess the C code. Please, let me know if you can figure this out.
+
+- Well, that is not obvious here to guess the C code. Please, let me know if you can figure this out.

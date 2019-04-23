@@ -1,4 +1,5 @@
-* There are 2 globals variables: __dword_403018__ and __dword_40301C__. They are referenced using ds:__[MEM_ADDRESS]__:
+- There are 2 globals variables: **dword_403018** and **dword_40301C**. They are referenced using ds:**[MEM_ADDRESS]**:
+
 ```
 .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)
 .text:00401000 _main           proc near               ; CODE XREF: ___tmainCRTStartup+10A↓p
@@ -17,7 +18,9 @@
 .text:0040101A _main           endp
 .text:0040101A
 ```
-* They are defined in __.data__ section as follows:
+
+- They are defined in **.data** section as follows:
+
 ```
 .data:00403018 dword_403018    dd 5                    ; DATA XREF: _main+3↑w
 .data:0040301C dword_40301C    dd 6                    ; DATA XREF: _main+D↑w

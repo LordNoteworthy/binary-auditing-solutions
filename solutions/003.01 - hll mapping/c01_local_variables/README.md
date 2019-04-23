@@ -1,4 +1,5 @@
-* Local variables are referenced using __ss:[ebp-X]__.
+- Local variables are referenced using **ss:[ebp-X]**.
+
 ```
 .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)
 .text:00401000 _main           proc near               ; CODE XREF: ___tmainCRTStartup+10A↓p
@@ -24,7 +25,9 @@
 .text:00401022                 retn
 .text:00401022 _main           endp
 ```
-* The C code will look like:
+
+- The C code will look like:
+
 ```
 int a = 5;
 int b = 6;

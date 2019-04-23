@@ -1,4 +1,5 @@
-* The __continue__ statement in C programming works somewhat like the break statement. Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
+- The **continue** statement in C programming works somewhat like the break statement. Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -45,11 +46,13 @@
 .text:0040105D                 retn
 .text:0040105D _main           endp
 ```
-* The C pseaudo code:
+
+- The C pseaudo code:
+
 ```
 for ( var_4 = 10; var_4 > 0; --var_4 ) {
 
-    if ( i == 5 ) 
+    if ( i == 5 )
         continue;
 
     std::cout << var_4 << ", ";

@@ -1,4 +1,5 @@
-* A while loop in C repeatedly executes a target statement as long as a given condition is true:
+- A while loop in C repeatedly executes a target statement as long as a given condition is true:
+
 ```
 The syntax of a while loop in C programming language is:
 
@@ -6,9 +7,11 @@ while(condition) {
    statement(s);
 }
 ```
-* In our scenario, our condition is located at _0x0040100B_, it exits the loop once local __var_4__ is less or equal to 0.
-* __var_4__ was initialized to 9 at _0x00401004_.
-* The code inside the loop is responsible for printing: ```9, 8, 7, 6, 5, 4, 3, 2, 1``` then after exiting the loop ```FIRE!\n```.
+
+- In our scenario, our condition is located at _0x0040100B_, it exits the loop once local **var_4** is less or equal to 0.
+- **var_4** was initialized to 9 at _0x00401004_.
+- The code inside the loop is responsible for printing: `9, 8, 7, 6, 5, 4, 3, 2, 1` then after exiting the loop `FIRE!\n`.
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -29,7 +32,7 @@ while(condition) {
 .text:0040102F                 mov     ecx, [ebp+var_4]
 .text:00401032                 sub     ecx, 1
 .text:00401035                 mov     [ebp+var_4], ecx
-.text:00401038                 jmp     short loc_40100B ; 
+.text:00401038                 jmp     short loc_40100B ;
 .text:0040103A ; ---------------------------------------------------------------------------
 .text:0040103A
 .text:0040103A loc_40103A:                             ; CODE XREF: _main+F↑j
@@ -44,7 +47,9 @@ while(condition) {
 .text:00401053                 retn
 .text:00401053 _main           endp
 ```
-* The C pseaudo-code will look like this:
+
+- The C pseaudo-code will look like this:
+
 ```
 int var_4 = 9;
 while (var_4 < 0>) {

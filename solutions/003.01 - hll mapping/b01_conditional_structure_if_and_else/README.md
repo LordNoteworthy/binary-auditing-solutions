@@ -1,12 +1,13 @@
-* We have two local variables __var_4__ and __var_8__. var_4 is assigned the value 0.
+- We have two local variables **var_4** and **var_8**. var_4 is assigned the value 0.
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
 .text:00401003                 sub     esp, 8
-.text:00401006                 mov     [ebp+var_4], 0  ; var_4 = 0
+.text:00401006                 mov     [ebp+var_4], 0   ; var_4 = 0
 .text:0040100D                 cmp     [ebp+var_4], 0
 .text:00401011                 jle     short loc_40101C ; jump if (var_4 <= 0)
-.text:00401013                 mov     [ebp+var_8], 1  ; var_8 = 1
+.text:00401013                 mov     [ebp+var_8], 1   ; var_8 = 1
 .text:0040101A                 jmp     short exit
 .text:0040101C ; ---------------------------------------------------------------------------
 .text:0040101C
@@ -28,7 +29,9 @@
 .text:00401037                 retn
 .text:00401037 _main           endp
 ```
-* C pseaudo-code:
+
+- C pseaudo-code:
+
 ```
 int var_4, var_8;
 var_4 = 0;

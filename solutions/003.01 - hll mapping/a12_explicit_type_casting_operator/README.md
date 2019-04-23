@@ -1,26 +1,33 @@
-* Explicit Type Conversion: This process is also called type casting and it is user defined. Here the user can type cast the result to make it of a particular data type. Example:
+- Explicit Type Conversion: This process is also called type casting and it is user defined. Here the user can type cast the result to make it of a particular data type. Example:
+
 ```
-    double x = 1.2; 
-  
-    // Explicit conversion from double to int 
-    int sum = (int)x + 1; 
+    double x = 1.2;
+
+    // Explicit conversion from double to int
+    int sum = (int)x + 1;
 ```
-* In our example, we have the following scenario:
+
+- In our example, we have the following scenario:
+
 ```
 .text:01071006                 fld     ds:pi           ; Pushes the source operand onto the FPU register stack ST(0)
 .text:0107100C                 fstp    [ebp+var_8]     ; Store the value in the ST(0) register to the destination operand
 .text:0107100F                 fld     [ebp+var_8]
 .text:01071012                 call    __ftol2_sse     ; Convert the float into an int using SSE, the casting is done here as this x = (int)3.14
 ```
-* The user wants to convert the PI number to an int, which can be achieved simply by:
+
+- The user wants to convert the PI number to an int, which can be achieved simply by:
+
 ```
     float pi = 3.1400001;
     int a = (int)pi;
 ```
-* The compiler optimized this convertion using SSE version of ftol2(): ```__ftol2_sse()```:.
-* If you disassm ```__ftol2_sse```, this function will check if SSE instructions are supported by the CPU ```__get_sse2_info```, if yes, __cvttsd2si__ will take care the of convertion, otherwise we will fall to __ftol2() without SSE.
+
+- The compiler optimized this convertion using SSE version of ftol2(): `__ftol2_sse()`:.
+- If you disassm `__ftol2_sse`, this function will check if SSE instructions are supported by the CPU `__get_sse2_info`, if yes, **cvttsd2si** will take care the of convertion, otherwise we will fall to \_\_ftol2() without SSE.
+
 ```
-text:01071820                 cmp     dword_1073374, 0 ; Is SSE supported ? __get_sse2_info()
+.text:01071820                 cmp     dword_1073374, 0 ; Is SSE supported ? __get_sse2_info()
 .text:01071827                 jz      short __ftol2
 .text:01071829
 .text:01071829 __ftol2_pentium4:                       ; CODE XREF: __ftol2_sse+34↓j
@@ -95,6 +102,4 @@ text:01071820                 cmp     dword_1073374, 0 ; Is SSE supported ? __ge
 .text:010718C9                 leave
 .text:010718CA                 retn
 .text:010718CA __ftol2_sse     endp
-``` 
-
-
+```

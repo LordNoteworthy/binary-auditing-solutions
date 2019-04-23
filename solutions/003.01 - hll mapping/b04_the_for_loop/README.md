@@ -1,4 +1,5 @@
-* A for loop in C repeatedly executes a target statement as long as a given condition is true:
+- A for loop in C repeatedly executes a target statement as long as a given condition is true:
+
 ```
 The syntax of a for loop in C programming language is:
 
@@ -6,11 +7,13 @@ for ( init; condition; increment/decrement ) {
    statement(s);
 }
 ```
-* In our scenario, the __init__ is located at _0x00401004_, our local __var_4__ is set to 0xA.
-* Our __condition__ is located at _0x00401016_, it exits the loop once local __var_4__ is less or equal to 0.
-* Our __decrement__ is located at _0x00401010_, our our local __var_4__ is decremented by 1.
-* The code inside the loop is responsible for printing: ```10, 9, 8, 7, 6, 5, 4, 3, 2, 1``` then after exiting the loop ```FIRE!\n```.
-* Notice how this is different than the while loop seen before.
+
+- In our scenario, the **init** is located at _0x00401004_, our local **var_4** is set to 0xA.
+- Our **condition** is located at _0x00401016_, it exits the loop once local **var_4** is less or equal to 0.
+- Our **decrement** is located at _0x00401010_, our our local **var_4** is decremented by 1.
+- The code inside the loop is responsible for printing: `10, 9, 8, 7, 6, 5, 4, 3, 2, 1` then after exiting the loop `FIRE!\n`.
+- Notice how this is different than the while loop seen before.
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -50,7 +53,9 @@ for ( init; condition; increment/decrement ) {
 .text:00401055                 retn
 .text:00401055 _main           endp
 ```
-* The C pseaudo-code will look like this:
+
+- The C pseaudo-code will look like this:
+
 ```
 for (var_4 = 10; var_4 > 0; --var_4) {
     printf ("%d, ", var_4);

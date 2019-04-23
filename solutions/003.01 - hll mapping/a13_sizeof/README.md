@@ -1,5 +1,6 @@
-* __sizeof__ is an operator in C which  simply returns the amount of memory is allocated to data types.
-* Our disassembly looks like:
+- **sizeof** is an operator in C which simply returns the amount of memory is allocated to data types.
+- Our disassembly looks like:
+
 ```
 .text:00401000                 push    ebp
 .text:00401001                 mov     ebp, esp
@@ -11,6 +12,5 @@
 .text:00401010                 retn
 .text:00401010 _main           endp
 ```
-* As far as I know, sizeof is a __compile time__ operator, is it not obvious to guess the C code but I guess it looks like __var_4__ was set to the __sizeof(char)__ which is equal to 1.
 
-
+- As far as I know, sizeof is a **compile time** operator, is it not obvious to guess the C code but I guess it looks like **var_4** was set to the **sizeof(char)** which is equal to 1.
