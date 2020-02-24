@@ -1,6 +1,6 @@
 - We have only one function in our program which is the **main()** which was identified automatically by IDA.
 - Notice how IDA tells us that this is an EBP-based stack frame used in the main function, which means the local variables and parameters will be referenced via the EBP register throughout the function.
-- In general, local varible are referenced using `[EBP-X]` and parameters are referenced via `[EBP+X]`.
+- In general, local variables are referenced using `[EBP-X]` and parameters are referenced via `[EBP+X]`.
 - IDA has successfully discovered all local variables and parameters in this function. It has labeled the local variables with the prefix **var\_**.
 - All local variable are here:
 

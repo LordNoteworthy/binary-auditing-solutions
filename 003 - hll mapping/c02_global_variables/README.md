@@ -1,4 +1,5 @@
-- There are 2 globals variables: **dword_403018** and **dword_40301C**. They are referenced using ds:**[MEM_ADDRESS]**:
+- There are 2 globals variables: **dword_403018** and **dword_40301C**. 
+- They are referenced using ds:**[MEM_ADDRESS]**:
 
 ```
 .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)

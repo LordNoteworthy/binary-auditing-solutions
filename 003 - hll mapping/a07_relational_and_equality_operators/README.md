@@ -18,7 +18,7 @@
       goto some_address
   }
   ```
-- If you look now at the snippet below, you can immediately sport the equality operator being used to check if ECX is equal to 0, which is not the case here beucase it is equal to 1.
+- If you look now at the snippet below, you can immediately spot the equality operator being used to check if ECX is equal to 0, which is not the case here because it is equal to 1.
   ```
   .text:013C100B                 mov     ecx, 1
   .text:013C1010                 test    ecx, ecx
@@ -29,4 +29,4 @@
   .text:013C1016                                         ; _main+12j
   .text:013C1016                 pop     ebp
   ```
-- The condition will not be satisfied and he program will not jump to _loc_13C1016_ but instead he will zero eax and continue its execution flow.
+- The condition will not be satisfied and The program will not jump to _loc_13C1016_ but instead he will zero eax and continue its execution flow.

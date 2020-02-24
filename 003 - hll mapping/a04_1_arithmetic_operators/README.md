@@ -8,7 +8,7 @@
 2. ADD arithmetic operation is an addition (ADD):
 
 ```
-.text:013C1017 add     eax, [ebp+var_8]     ; eax = eax +  var_8
+.text:013C1017 add     eax, [ebp+var_8]     ; eax = eax + var_8
 ```
 
 3. IMUL arithmetic operation is a signed multiply:
@@ -20,6 +20,7 @@
 4. IDIV arithmetic operation is a signed division, after IDIV: EAX = Quotient, EDX = Remainder.
 
 ```
-.text:013C1033 cdq                                     ; EAX -> EDX:EAX (with sign)
-.text:013C1034 idiv    [ebp+var_8]                     ; EDX:EAX = EAX / var_8
+.text:013C1033 cdq                            ; EAX -> EDX:EAX (with sign)
+.text:013C1034 idiv    [ebp+var_8]            ; EDX:EAX = EDX:EAX / var_8] 
 ```
+- cdq: Converts signed DWORD in EAX to a signed quad word in EDX:EAX by extending the high order bit of EAX throughout EDX
