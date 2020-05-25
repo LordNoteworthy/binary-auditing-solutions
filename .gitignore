@@ -346,3 +346,4 @@ healthchecksdb
 MigrationBackup/
 
 # Ignore IDA IDA Pro Database files
+*.idb
