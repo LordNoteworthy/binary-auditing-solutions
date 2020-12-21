@@ -4,7 +4,7 @@
 - In the exercise, I was not able to find any instructions which gives the modulo, I am wondering if the author takes into consideration the code which calls the `main()` function, if you have any suggestion, please let me know.
 - Main function disassembly:
 
-```
+```assembly
 .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)
 .text:00401000 _main           proc near               ; CODE XREF: ___tmainCRTStartup+10Ap
 .text:00401000

@@ -5,7 +5,7 @@
 
 1. The first compound assignment (var_4 += 6):
 
-```
+```assembly
 .text:0040101B                 mov     eax, [ebp+var_4] ; eax = var_4
 .text:0040101E                 add     eax, 6           ; eax = eax + 6
 .text:00401021                 mov     [ebp+var_4], eax ; var_4 = eax
@@ -13,7 +13,7 @@
 
 2. The second compound assignment (var_8 -= 5):
 
-```
+```assembly
 .text:00401024                 mov     ecx, [ebp+var_8] ; ecx = var_8
 .text:00401027                 sub     ecx, 5           ; ecx = ecx - 5
 .text:0040102A                 mov     [ebp+var_8], ecx ; var_8 = ecx
@@ -21,7 +21,7 @@
 
 3. The third compound assignment (var_C \*= 3):
 
-```
+```assembly
 .text:0040102D                 mov     edx, [ebp+var_C] ; edx = var_C
 .text:00401030                 imul    edx, 3           ; edx = edx * 3
 .text:00401033                 mov     [ebp+var_C]      ; var_C = edx

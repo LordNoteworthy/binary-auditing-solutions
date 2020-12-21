@@ -19,7 +19,7 @@
   }
   ```
 - If you look now at the snippet below, you can immediately spot the equality operator being used to check if ECX is equal to 0, which is not the case here because it is equal to 1.
-  ```
+  ```assembly
   .text:013C100B                 mov     ecx, 1
   .text:013C1010                 test    ecx, ecx
   .text:013C1012                 jz      short loc_13C1016

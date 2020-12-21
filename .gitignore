@@ -345,5 +345,8 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# Ignore IDA IDA Pro Database files
+# Ignore IDA Pro related files.
 *.idb
+*.id0
+*.id1
+*.nam

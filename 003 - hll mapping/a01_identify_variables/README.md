@@ -4,7 +4,7 @@
 - IDA has successfully discovered all local variables and parameters in this function. It has labeled the local variables with the prefix **var\_**.
 - All local variable are here:
 
-```
+```assembly
 var_38= qword ptr -38h
 var_2C= dword ptr -2Ch
 var_25= byte ptr -25h
@@ -22,10 +22,8 @@ var_8= qword ptr -8
 
 - BYTE: 1 byte, WORD: 2 bytes, DWORD: 4 bytes and QWORD: 8 bytes.
 - For example, here is a mapping from Assembly -> C for var_D :
-
-```
+```assembly
 .text:00401006                 mov     [ebp+var_D], 0       -> unsigned char var_D = 0;
 .text:0040100A                 mov     [ebp+var_D], 0FFh    -> var_D = 0xFF
 ```
-
 - Same can be applied to the other variables.

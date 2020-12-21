@@ -9,7 +9,7 @@
   ```
 - In above example, if A is greater than 100, 0 is returned else 1 is returned. This is equal to if else conditional statements.
 - Now, let's go back to our exercice:
-  ```
+  ```assembly
   .text:00A71006                 mov     [ebp+var_4], 2
   .text:00A7100D                 mov     [ebp+var_8], 7
   .text:00A71014                 mov     eax, [ebp+var_4]
@@ -31,7 +31,7 @@
   ```
 - If we tranlate it to C code:
 
-```
+```c
 var_10 = (var_4 <= var_8) ? var_8 : var_4;
 ```
 

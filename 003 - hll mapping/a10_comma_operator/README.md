@@ -2,7 +2,7 @@
 - Commas can be used as separators in some contexts, such as function argument lists. Do not confuse the use of the comma as a separator with its use as an operator; the two uses are completely different.
 - Example:
 
-  ```
+  ```c
   int main () {
   int i = 10, b = 20, c= 30;
   i = b, c;
@@ -19,7 +19,7 @@
   30
   ```
 - If we look at the disassembly of this exercice, we see only a `return 0`:
-  ```
+  ```assembly
   .text:00401000 ; int __cdecl main(int argc, const char **argv, const char **envp)
   .text:00401000 _main           proc near               ; CODE XREF: ___tmainCRTStartup+10A↓p
   .text:00401000

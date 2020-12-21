@@ -34,7 +34,6 @@
 ```
 
 - At 0x00F6104D is the object creation, we call the constructor to initialize the object we want to calculate the area for.
-- It takes 
 ```assembly
 .text:00F61020 ; private: void __thiscall Concurrency::details::VirtualProcessor::ClaimTicket::InitializeTicket(enum Concurrency::details::VirtualProcessor::AvailabilityType, class Concurrency::details::VirtualProcessor *)
 .text:00F61020 ?InitializeTicket@ClaimTicket@VirtualProcessor@details@Concurrency@@AAEXW4AvailabilityType@234@PAV234@@Z proc near
@@ -82,7 +81,7 @@
 
 - C equivalent code:
 
-```cpp;
+```cpp
 class MyObject
 {
 public:

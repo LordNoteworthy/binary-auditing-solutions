@@ -54,3 +54,25 @@
 .text:004010C9                 retn
 .text:004010C9 _main           endp
 ```
+
+- C equivalent code:
+
+```cpp
+class MyObject
+{
+public:
+    MyObject(int _x, int _y) { x = _x; y = _y; };
+    int Area() { return x * y; }
+private:
+    int x;
+    int y;
+};
+
+int main()
+{
+    MyObject a = MyObject(3, 4);
+    MyObject b = MyObject(5, 6);
+    std::cout << "rect area: " << a.Area() << std::endl;
+    std::cout << "rectb area: " << b.Area() << std::endl;
+}
+```

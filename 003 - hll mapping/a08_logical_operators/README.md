@@ -4,7 +4,7 @@
 
 - Here is our disassembly of the exercice with some comments:
 
-  ```
+  ```assembly
   .text:00401000                 push    ebp
   .text:00401001                 mov     ebp, esp
   .text:00401003                 sub     esp, 8             ; reserve space for 2 local vars

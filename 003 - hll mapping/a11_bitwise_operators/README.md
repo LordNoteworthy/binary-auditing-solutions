@@ -3,17 +3,17 @@
 
 * We have a shift left operation:
 
-  ```
+  ```assembly
   .text:00401028                 shl     ecx, 1 ;    SHL X, Y = X * 2 ^ Y
   ```
 
 * And a shift right operation:
 
-  ```
+  ```assembly
   .text:0040104A                 shr     eax, 1 ;    SHR X, Y =  X / 2 ^ Y
   ```
 
 * And an exclusive OR:
-  ```
+  ```assembly
   .text:00401051                 xor     eax, eax ;  This is equivalent to make mov eax, 0
   ```

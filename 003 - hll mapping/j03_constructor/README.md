@@ -1,0 +1,3 @@
+- No difference compared to the previous exercice.
+- I suspect the author did change something in code, but in the binary level, nothing changed.
+- Probably I am missing something, please let me know in case you know.
